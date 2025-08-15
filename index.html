@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -39,6 +39,7 @@
     </header>
 
     <main class="main-content">
+        <!-- ... (Contenido principal sin cambios) ... -->
         <div class="cv-grid">
             <section id="about" class="card about-me-card animate-on-load">
                 <h2 class="card-title"><i class="material-icons">person</i> Sobre mí</h2>
@@ -90,8 +91,21 @@
     
     <div class="fab-container">
         <div class="fab-main-button" id="fab-toggle"><i class="material-icons">add</i></div>
+        
         <div class="fab-options">
-            <button id="theme-toggle" class="fab-option" data-tooltip="Cambiar Tema"><i class="material-icons" id="theme-icon">light_mode</i></button>
+            <div class="theme-submenu">
+                <button id="theme-menu-toggle" class="fab-option" data-tooltip="Temas"><i class="material-icons">palette</i></button>
+                <div class="theme-palette">
+                    <!-- ===== INICIO DEL CAMBIO: BOTÓN DE TEMA CLARO AÑADIDO ===== -->
+                    <button class="theme-option" data-theme="dark" data-tooltip="Tema Oscuro"><i class="material-icons">brightness_2</i></button>
+                    <button class="theme-option" data-theme="forest" data-tooltip="Tema Bosque"><i class="material-icons">park</i></button>
+                    <button class="theme-option" data-theme="ocean" data-tooltip="Tema Océano"><i class="material-icons">water</i></button>
+                    <button class="theme-option" data-theme="matrix" data-tooltip="Tema Matrix"><i class="material-icons">code</i></button>
+                    <button class="theme-option" data-theme="light" data-tooltip="Tema Claro"><i class="material-icons">light_mode</i></button>
+                    <!-- ===== FIN DEL CAMBIO ===== -->
+                </div>
+            </div>
+
             <button id="download-pdf" class="fab-option" data-tooltip="Descargar CV"><i class="material-icons">download</i></button>
             <a href="#" id="facebookLink" class="fab-option" data-tooltip="Facebook">
                 <img src="https://hectordanielayarachifuentes.github.io/CV-HECTORDANIEL-AYARACHIFUENTES/ImagenesContactos/facebook.png" alt="Facebook">
@@ -113,6 +127,7 @@
             </a>
         </div>
     </div>
+
     <button id="back-to-top" title="Volver Arriba"><i class="material-icons">arrow_upward</i></button>
     
     <footer class="main-footer">
