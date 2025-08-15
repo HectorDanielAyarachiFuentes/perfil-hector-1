@@ -204,12 +204,21 @@ a:hover { opacity: 0.8; }
     text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     line-height: 1.2;
 }
+
+/* ===== ESTA ES LA SECCIÓN CORREGIDA Y MEJORADA ===== */
 .hero-section .subtitle {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: rgba(255,255,255,0.9);
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-    margin-top: 0.5rem;
+    font-size: 1.3rem; /* Lo hacemos un poco más grande */
+    font-weight: 600; /* Le damos más peso para que resalte */
+    color: #ffffff;
+    margin-top: 0.75rem; /* Aumentamos un poco la separación */
+    letter-spacing: 0.5px; /* Damos un poco de aire entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 0 0 5px rgba(0,0,0,0.5); /* Sombra más definida para legibilidad */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente sutil */
+    padding: 0.5rem 1.5rem; /* Espaciado interno para que respire */
+    border-radius: 50px; /* Bordes redondeados para un look de "píldora" */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero para un efecto de cristal */
+    backdrop-filter: blur(4px); /* Efecto "glassmorphism" para que se vea moderno */
+    -webkit-backdrop-filter: blur(4px);
 }
 
 /* --- GRID ORGÁNICO --- */
@@ -323,7 +332,6 @@ strong { font-weight: 500; color: var(--text-color); }
     position: relative; 
 }
 
-/* ===== ESTA ES LA CORRECCIÓN CLAVE #1 ===== */
 .fab-option:hover { 
     transform: scale(1.1); 
     background-color: var(--primary-color); 
@@ -402,7 +410,6 @@ strong { font-weight: 500; color: var(--text-color); }
     flex-shrink: 0;
 }
 
-/* ===== ESTA ES LA CORRECCIÓN CLAVE #2 ===== */
 .theme-option:hover { 
     transform: scale(1.1); 
     background-color: var(--primary-color); 
@@ -499,18 +506,14 @@ strong { font-weight: 500; color: var(--text-color); }
         font-size: 2rem; 
     }
     
+    /* Adaptamos el subtítulo para móviles, manteniendo el estilo tipo "píldora" */
     .hero-section .subtitle {
-        font-size: 0.9rem;
-        font-weight: 500;
+        font-size: 0.9rem; /* Un poco más pequeño para móviles */
         padding: 0.5rem 1rem;
         margin-top: 1rem;
-        border-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(8px);
+        letter-spacing: 0.2px; /* Reducimos el espaciado para móviles */
+        backdrop-filter: blur(8px); /* Aumentamos el desenfoque para mejor legibilidad */
         -webkit-backdrop-filter: blur(8px);
-        text-shadow: none;
-        color: white;
     }
     
     .cv-grid { margin-top: -60px; grid-template-columns: 1fr; }
